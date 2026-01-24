@@ -1370,7 +1370,7 @@ class PackageManagerApp(ctk.CTk):
             if is_unknown:
                 check_now_btn = ctk.CTkButton(
                     status_frame,
-                    text="🔄 Check Now",
+                    text="Check Now 🔄 ",
                     width=100,
                     height=30,
                     fg_color=COLORS["accent"],
@@ -1392,7 +1392,7 @@ class PackageManagerApp(ctk.CTk):
             is_updated = pkg["stat"] == "Updated"
             
             if is_outdated or is_updated:
-                btn_text = "🔄 Update Now" if is_outdated else "✅ Up to Date"
+                btn_text = "Update Now 🔄" if is_outdated else "Up to Date ✅"
                 btn_state = "normal" if is_outdated else "disabled"
                 btn_fg_color = COLORS["success"] if is_outdated else COLORS["surface"]
                 btn_hover_color = COLORS["accent_hover"] if is_outdated else COLORS["card"]
@@ -1416,7 +1416,7 @@ class PackageManagerApp(ctk.CTk):
             
             deps_btn = ctk.CTkButton(
                 buttons_frame,
-                text="📦 View Dependencies",
+                text="View Dependencies",
                 width=400,
                 height=45,
                 fg_color=COLORS["accent"],
@@ -1428,7 +1428,7 @@ class PackageManagerApp(ctk.CTk):
             )
             deps_btn.pack(pady=(0, 12))
             
-            uninstall_text = "⚠️ System Package" if is_critical else "🗑️ Uninstall"
+            uninstall_text = "System Package ⚠️ " if is_critical else "Uninstall 🗑️"
             uninstall_btn = ctk.CTkButton(
                 buttons_frame,
                 text=uninstall_text,
