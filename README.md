@@ -146,7 +146,6 @@ PyScope/
 │       ├── __init__.py
 │       ├── main_window.py  # Main application window
 │       └── dialogs.py      # Dialog components
-└── tests/                  # Test suite
 ```
 
 ---
