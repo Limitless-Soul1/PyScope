@@ -215,7 +215,8 @@ def run_pip_safe(args: List[str], timeout: int = 300, pip_cmd: Optional[List[str
             check=False,
             shell=False,
             encoding='utf-8',
-            errors='replace'
+            errors='replace',
+            **get_subprocess_kwargs()  # Hide CMD window on Windows
         )
         
         if result.returncode != 0:
@@ -303,6 +304,9 @@ def run_pip_with_real_progress(args: List[str], progress_callback=None,
                 'pip_command': 'custom' if pip_cmd else 'system'
             })
         
+        # Prepare subprocess arguments
+        kwargs = get_subprocess_kwargs()
+        
         # Start process
         process = subprocess.Popen(
             cmd,
@@ -312,7 +316,8 @@ def run_pip_with_real_progress(args: List[str], progress_callback=None,
             bufsize=1,
             universal_newlines=True,
             encoding='utf-8',
-            errors='replace'
+            errors='replace',
+            **kwargs  # Hide CMD window on Windows
         )
         
         all_output = []
