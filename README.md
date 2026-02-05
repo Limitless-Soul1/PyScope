@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="icons/logo.png" alt="PyScope Logo" width="120">
+  <img src="icons/logo.png" alt="PyScope Logo" width="200">
 </p>
 
 <h1 align="center">PyScope</h1>
 
 <p align="center">
-  <strong>A Modern Python Package Manager with GUI</strong>
+  <strong>Python Package Manager with GUI</strong>
 </p>
 
 <p align="center">
@@ -22,26 +22,26 @@
 
 ---
 
-## ✨ Features
+## Features
 
-### 🔄 Multi-Environment Support
+### Multi-Environment Support
 - **System Python** — Manage packages in your global Python installation
 - **Virtual Environments (venv)** — Full support for standard Python virtual environments
 - **Conda Environments** — Seamless integration with Anaconda/Miniconda
 - **Pyenv** — Automatic detection of pyenv-managed Python versions
 
-### 📦 Package Management
+### Package Management
 - **Install packages** directly from PyPI with version selection
 - **Uninstall packages** safely with dependency awareness
 - **Update packages** individually or check all at once
 - **Real-time search** with instant filtering
 
-### 🔍 Update Detection
+### Update Detection
 - Check installed packages against PyPI for available updates
-- Visual status indicators: ✅ Updated, ⚠️ Outdated, ❓ Unknown
+- Visual status indicators: Updated, Outdated, Unknown
 - Parallel checking with rate limiting for optimal performance
 
-### 🎨 Modern Interface
+### Modern Interface
 - Clean, intuitive dark theme UI built with PySide6/Qt6
 - Responsive design with background threading
 - Progress indicators for all operations
@@ -49,7 +49,7 @@
 
 ---
 
-## 📥 Installation
+## Installation
 
 ### Option 1: Standalone Executable (Windows)
 
@@ -78,7 +78,7 @@ PySide6>=6.5.0
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Main Interface
 
@@ -95,25 +95,16 @@ PySide6>=6.5.0
 - **Install Package** — Search and install from PyPI
 - **Double-click Package** — View details, update, or uninstall
 
-### Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+F` | Focus search bar |
-| `F5` | Refresh package list |
-| `Enter` | Open package details |
-
 ---
 
-## 🌍 Supported Environments
+## Supported Environments
 
 | Environment Type | Auto-Detection | Status |
 |------------------|----------------|--------|
-| System Python | ✅ | Full Support |
-| venv | ✅ | Full Support |
-| Conda/Miniconda | ✅ | Full Support |
-| Pyenv | ✅ | Full Support |
-| Poetry | ⚠️ | Planned |
+| System Python | Yes | Full Support |
+| venv | Yes | Full Support |
+| Conda/Miniconda | Yes | Full Support |
+| Pyenv | Yes | Full Support |
 
 ### Environment Detection Locations
 
@@ -132,7 +123,7 @@ PySide6>=6.5.0
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 PyScope/
@@ -155,12 +146,12 @@ PyScope/
 │       ├── __init__.py
 │       ├── main_window.py  # Main application window
 │       └── dialogs.py      # Dialog components
-└── tests/                  # Test suite (coming soon)
+└── tests/                  # Test suite
 ```
 
 ---
 
-## 💻 System Requirements
+## System Requirements
 
 | Requirement | Minimum |
 |-------------|---------|
@@ -173,15 +164,13 @@ PyScope/
 
 | Platform | Status |
 |----------|--------|
-| Windows 10/11 | ✅ Fully Supported |
-| Linux (Ubuntu/Debian) | ⚠️ Experimental |
-| macOS | ⚠️ Experimental |
+| Windows 10/11 | Fully Supported |
+| Linux (Ubuntu/Debian) | Experimental |
+| macOS | Experimental |
 
 ---
 
-## 🔧 Building from Source
-
-### Create Standalone Executable
+## Building from Source
 
 ```bash
 # Install PyInstaller
@@ -195,7 +184,7 @@ The executable will be created in the `dist/` folder.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -205,24 +194,15 @@ Contributions are welcome! Here's how you can help:
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
 
-### Development Setup
-
-```bash
-git clone https://github.com/Limitless-Soul1/PyScope.git
-cd PyScope
-pip install -r requirements.txt
-python app.py
-```
-
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 PyScope interacts directly with Python environments and package managers. Always verify the selected environment before installing or removing packages to avoid unintended changes to your system.
 
