@@ -1,7 +1,6 @@
 <p align="center">
   <img src="icons/logo.png" alt="PyScope Logo" width="300">
 </p>
-
 <h1 align="center">PyScope</h1>
 
 <p align="center">
